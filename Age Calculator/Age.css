@@ -1,0 +1,148 @@
+/*Javascriptpro_*/
+/*Dont forget to follow me on github,instagram and codepen.*/
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+
+body{
+background:#E0E7FF;       
+font-family: 'poppins', sans-serif;
+}
+
+.container{
+padding:20px;
+width:300px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+padding-top:0;
+border-radius:7px;
+overflow:hidden;
+}
+
+.container .date-input{
+padding:10px;   
+background:#3945B0;
+border-top-left-radius:7px;
+border-top-right-radius:7px;
+height:120px;
+width:100%;
+position:absolute;
+top:0;
+left:0;
+display:flex;
+align-items:center;
+}
+
+.container .date-input div{
+height:50px;   
+width:100px;
+margin-left:5px;
+}
+
+.container .date-input div p{
+color:white;   
+text-align:center;
+position:relative;
+top:-40px;
+}
+
+.container .date-input div input{
+all:unset;  
+height:30px;
+width:60px;
+background:white;
+text-align:center;
+border-radius:3px;
+position:relative;
+top:-50px;
+left:20px;
+}
+
+.container .date-input .submit-btn{
+all:unset;  
+height:30px;
+width:300px;
+background:white;
+display:flex;
+justify-content:center;
+align-items:center;
+position:absolute;
+top:95px;
+left:20px;
+border-radius:3px;
+cursor:pointer;
+}
+
+.container .result{
+height:150px;    
+width:100%;
+border-bottom:1px solid grey;
+position:relative;
+top:140px;
+display:flex;
+align-items:center;
+}
+
+.container .result div{
+height:100px;  
+width:100px;
+float:left;
+display:flex;
+justify-content:center;
+} 
+
+.container .result div p{
+color:grey;
+position:absolute;
+bottom:3px;
+font-size:14px;
+}
+
+.container .result div div{
+height:80px;
+width:75px;
+background:red;
+border-radius:7px;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:28px;
+}
+
+.container .result div:nth-child(1) div{
+background:#3DB3FF;        
+}
+
+.container .result div:nth-child(2) div{
+background:#F2CF3E;        
+}
+
+.container .result div:nth-child(3) div{
+background:#7CA386;        
+}
+
+.container .other-results{
+margin-top:150px;
+}
+
+.container .other-results table td{
+padding:4px;       
+}
+
+.container .other-results table td:nth-child(odd){
+font-size:15px;        
+}
+
+.container .other-results table td:nth-child(even){
+font-weight:600;
+font-size:15px;  
+position:absolute;
+right:20px;
+}
+
+::selection{
+background:#3945B0;
+color:white;
+}
