@@ -1,104 +1,101 @@
 /*Javascriptpro_*/
-/*Dont forget to follow me on github,instagram and codepen.*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
-margin:0;  
+margin:0; 
 padding:0;
 box-sizing:border-box;
-}
+}   
 
 body{
-background:#1E90FF; 
+background:#FFBC13; 
 font-family: 'poppins', sans-serif;
 }
 
 .container{
-padding:20px;  
-width:350px;
-background:white;
-border-radius:7px;
+padding:30px;   
+width:380px;
+background:#232534;
+background:#FFF;
 position:absolute;
 top:50%;
 left:50%;
 transform:translate(-50%,-50%);
+border-radius:5px;
+padding-bottom:30px;
 }
 
-.container .search-box{
-height:50px;        
-padding:0px 12px 0px 17px;   
-width:100%;
-border:1px solid grey;
-border-radius:3px;
+.container h2{
+text-align:center;
+font-size:17px;
+letter-spacing:2px;
+color:#000;
+margin-top:3px;
+text-transform:uppercase;
+}
+
+.container .reset-btn{
+all:unset; 
+height:40px;
+width:160px;
+background:#000;
+color:#FFF;
 display:flex;
 align-items:center;
-}
-
-.container .search-box i{
-color:grey; 
-font-size:15px;
-}
-
-.container .search-box input{
-all:unset;  
-width:100%;
-margin-left:10px;
-height:46px;
-font-size:14px;
-}
-
-.container .info-box{
-padding:1px; 
-}
-
-.container .info-box .country-flag-name{
-height:130px; 
-width:150px;
+justify-content:center;
+border-radius:3px;
 margin:auto;
-margin-top:25px;
-}
-
-.container .info-box .country-flag-name .image{
-height:100px;  
-width:150px;
-}
-
-.container .info-box .country-flag-name .image img{
-height:100px;  
-width:150px;
-}
-
-.container .info-box .country-flag-name h3{
-text-align:center;  
+margin-top:18px;
 text-transform:uppercase;
-margin-top:3px;
-font-size:16px;
+letter-spacing:1px;
+font-size:12px;
+cursor:pointer;
 }
 
-.container .info-box .other-info{
-padding:1px;  
-margin-top:8px;
+.container .game{
+width:100%;  
+height:350px;
+margin-top:25px;
+display:flex;
+flex-wrap:wrap;
+gap:7px;
+transform-style:preserve-3d;
+perspective:500px;
 }
 
-.container .info-box .other-info h5{
-margin-top:7px;    
-font-weight:600;
-font-size:13px;
+.item{
+position:relative; 
+height:74px;
+width:74px;
+background:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:25px;
+transition:all .25s;
+transform:rotateY(180deg);
+border:2px solid #000;
+border-radius:3px;
 }
 
-.container .info-box .other-info h5 span{
-color:dimgrey;    
-font-weight:500;
-margin-left:5px;
+.item.boxOpen{
+transform:rotateY(0deg);
 }
 
-.container .invalid-name-message{
-text-align:center;
-font-size:14px;
-color:dimgrey;
-margin-top:13px;
+.item::after{
+content:"";  
+position:absolute;
+inset:0;
+background:#FFBC13;
+transition:all .25s;
+transform:rotateY(0deg);
+backface-visibility:hidden;
+}
+
+.boxOpen::after,.boxMatch::after{
+transform:rotateY(180deg);        
 }
 
 ::selection {
 background:rgb(100, 149, 237, 0.8);
 color:white;
-}   
+}
